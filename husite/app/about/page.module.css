@@ -1,0 +1,36 @@
+.page {
+    font-family: var(--font-lexend);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageLink {
+    margin: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+.paragraph {
+    animation: fadeIn 0.5s ease-out 0s 1 both;
+}
+
+.pageTitle {
+    animation: fadeIn 0.5s ease-out 0s 1 both;
+}
+
+.subheading {
+    animation: fadeIn 0.5s ease-out 0s 1 both;
+}
