@@ -14,12 +14,12 @@ export default function RequestSitePage() {
 
             <div className={styles.formContainer}>
                 <form action={formAction}>
-                    <input name="requestName" required placeholder="Site Name"/>
-                    <input name="email" placeholder="Email" required/>
-                    <input name="firstName" placeholder="First Name" required/>
-                    <input name="lastName" placeholder="Last Name" required/>
-                    <input name="description" placeholder="Description" required/>
-                    <button type="submit">{isPending ? "Sending in.." : "Submit Request"}</button>
+                    <input name="requestName" className={styles.textField} required placeholder="Site Name"/>
+                    <input name="email" placeholder="Email" className={styles.textField} required/>
+                    <input name="firstName" placeholder="First Name" className={styles.textField} required/>
+                    <input name="lastName" placeholder="Last Name" className={styles.textField} required/>
+                    <input name="description" placeholder="Description" className={styles.textFieldXL} required/>
+                    <button type="submit" className={styles.submitButton}>{isPending ? "Sending in.." : "Submit Request"} </button>
                     <p>{state.message}</p>
                 </form>
             </div>

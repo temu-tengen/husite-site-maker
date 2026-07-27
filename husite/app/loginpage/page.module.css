@@ -15,6 +15,7 @@
 
     border-radius: 20px;
     height: 20px;
+    padding: 5px;
     align-items: center;
 }
 
@@ -24,6 +25,8 @@
     border-radius: 20px;
     width: 90%;
     height: 60px;
+
+    padding: 3px;
 }
 
 .submitButton {
@@ -45,4 +48,9 @@
 .submitButton:hover {
     background-color: grey;
     transition: background-color 0.2s ease-in-out;
+}
+
+.errorMessage {
+    color: red;
+    margin: 20px;
 }
