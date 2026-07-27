@@ -26,7 +26,7 @@ export default function LoginPage() {
             <p className={styles.errorMessage}>{state.message}</p>
 
             <div>
-                <button onClick={() => redirect('/requestsite')} className={styles.submitButton}>Go Home</button>
+                <button onClick={() => redirect('/')} className={styles.submitButton}>Go Home</button>
             </div>
 
         </div>
