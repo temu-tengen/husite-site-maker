@@ -44,6 +44,10 @@ export async function logout() {
     redirect('/');
 }
 
+export async function returnHome() {
+    redirect('/');
+}
+
 export async function submitRequest(prevState: FormState, formData: FormData): Promise<FormState> {
     const firstName = formData.get("firstName");
     const lastName = formData.get("lastName");
@@ -61,4 +65,12 @@ export async function submitRequest(prevState: FormState, formData: FormData): P
     } else {
         return { success: false, message: "You've already sent in an request in progress. Due to our limited staff, we can't accept more than one request per person. Try again after your first site has been completed." };
     }
+}
+
+export async function getRequests() {
+    const sql = neon(process.env.DATABASE_URL!);
+
+    return sql`
+    SELECT * FROM requests;
+    `;
 }

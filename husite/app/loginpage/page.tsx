@@ -12,6 +12,7 @@ const initialState: FormState = {
 }
 export default function LoginPage() {
     const [state, formAction, isPending] = useActionState(checkLogin, initialState);
+
     return (
         <div className={styles.container}>
             <h1 className={styles.pagetitle}>Admin Login</h1>
