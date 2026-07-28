@@ -19,8 +19,6 @@ const lexend = Lexend({
   subsets: ["latin"],
 });
 
-import type { Metadata } from 'next';
-
 export const metadata: Metadata = {
   title: {
     default: 'Husite | Custom Web Development Built to Your Vision',
@@ -77,6 +75,7 @@ export const metadata: Metadata = {
     ],
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
